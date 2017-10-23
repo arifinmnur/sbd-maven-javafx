@@ -11,6 +11,7 @@ public class FXMLController implements Initializable {
     
     @FXML
     private Label label;
+
     
     @FXML
     private void handleButtonAction(ActionEvent event) {

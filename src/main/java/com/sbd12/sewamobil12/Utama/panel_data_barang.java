@@ -6,8 +6,7 @@
 package com.sbd12.sewamobil12.Utama;
 
 
-import com.sbd12.sewamobil12.Utama.frm_Utama_metro;
-import com.sbd12.sewamobil12.Pkg_Merk_Mobil.*;
+import com.sbd12.sewamobil12.Pkg_MerkMobil.*;
 import com.sbd12.sewamobil12.Pkg_ProdusenMobil.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,11 +17,9 @@ import tab_barang.dt_Barang;
 import tab_barang.barangTableModel;*/
 
 import java.util.List;
-import javax.swing.JOptionPane;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import com.sbd12.sewamobil12.Pkg_Merk_Mobil.*;
-import com.sbd12.sewamobil12.Pkg_ProdusenMobil.*;
 
 /**
  *

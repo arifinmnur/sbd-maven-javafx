@@ -17,13 +17,13 @@
    </bean>
 
    <!-- Definition for studentJDBCTemplate bean -->
-  <bean id = "ProdusenMobilJDBCTemplate" 
-      class = "com.sbd12.sewamobil.Pkg_ProdusenMobil.ProdusenMobilJDBCTemplate">
+  <bean id = "produsenMobilJDBCTemplate"
+      class = "com.sbd12.sewamobil12.Pkg_ProdusenMobil.ProdusenMobilJDBCTemplate">
       <property name = "dataSource" ref = "dataSource" />    
    </bean> 
    
-   <bean id = "MerkMobilJDBCTemplate" 
-      class = "com.sbd12.sewamobil.Pkg_Merk_Mobil.MerkMobilJDBCTemplate">
+   <bean id = "merkMobilJDBCTemplate"
+      class = "com.sbd12.sewamobil12.Pkg_MerkMobil.MerkMobilJDBCTemplate">
       <property name = "dataSource" ref = "dataSource" />    
    </bean> 
     <!--<context:component-scan base-package="/src/uutama.*"/> -->
