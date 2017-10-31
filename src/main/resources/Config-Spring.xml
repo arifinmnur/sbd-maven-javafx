@@ -17,7 +17,7 @@
    </bean>
 
    <!-- Definition for studentJDBCTemplate bean -->
-  <bean id = "produsenMobilJDBCTemplate"
+  <!--<bean id = "produsenMobilJDBCTemplate"
       class = "com.sbd12.sewamobil12.Pkg_ProdusenMobil.ProdusenMobilJDBCTemplate">
       <property name = "dataSource" ref = "dataSource" />    
    </bean> 
@@ -25,8 +25,11 @@
    <bean id = "merkMobilJDBCTemplate"
       class = "com.sbd12.sewamobil12.Pkg_MerkMobil.MerkMobilJDBCTemplate">
       <property name = "dataSource" ref = "dataSource" />    
-   </bean> 
+   </bean>  -->
     <!--<context:component-scan base-package="/src/uutamaa.*"/> -->
-	
+    <context:component-scan base-package="com.sbd12.sewamobil12.Pkg_ProdusenMobil"/>
+    <context:component-scan base-package="com.sbd12.sewamobil12.Pkg_Merk_Mobil"/>
+    <context:component-scan base-package="com.sbd12.sewamobil12.Pkg_Data_Mobil"/>
+    <context:component-scan base-package="com.sbd12.sewamobil12.Pkg_Jenis_Mobil"/>
       
 </beans>

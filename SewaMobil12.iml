@@ -9,7 +9,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -32,5 +32,7 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.44" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.netbeans.external:AbsoluteLayout:RELEASE65" level="project" />
+    <orderEntry type="library" name="Maven: com.jfoenix:jfoenix:1.9.1" level="project" />
+    <orderEntry type="library" name="Maven: TrayNotification:TrayNotification:unknown" level="project" />
   </component>
 </module>

@@ -1,26 +1,23 @@
-package com.sbd12.sewamobil12.Pkg_MerkMobil;
-
-
-
-
-import java.util.List;
-import javax.swing.table.AbstractTableModel;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package com.sbd12.sewamobil12.Pkg_Data_Mobil;
+
+import com.sbd12.sewamobil.Pkg_Merk_Mobil.MerkMobil;
+import java.util.List;
+import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author ArieDZ
+ * @author resas
  */
-public class MerkMobilTableModel extends AbstractTableModel{
-    private List<MerkMobil> data;
-    private String[] nameField={"ID Merk","Produsen","Jenis","Nama"};
+public class DataMobilTableModel extends AbstractTableModel{
+    private List<DataMobil> data;
+    private String[] nameField={"No Polisi","Merk","Owner"};
     
-    public void setData(List<MerkMobil> data)
+    public void setData(List<DataMobil> data)
     {
         this.data=data;
     }
@@ -37,13 +34,12 @@ public class MerkMobilTableModel extends AbstractTableModel{
     @Override
     public Object getValueAt(int baris, int kolom) {
         
-        MerkMobil kst=data.get(baris);
+        DataMobil kst=data.get(baris);
         switch(kolom)
         {
-            case 0: return kst.getId_merk_mobil();
-            case 1: return kst.getNama_produsen_mobil();
-            case 2: return kst.getNama_jenis();
-            case 3: return kst.getNama_Merk_Mobil();
+            case 0: return kst.getNo_pol();
+            case 1: return kst.getNama_mobil();
+            case 2: return kst.getNama_ow();
             default : return null;
         }
     }
@@ -52,6 +48,4 @@ public class MerkMobilTableModel extends AbstractTableModel{
     {
         return nameField[column];
     }
-    
-    
 }

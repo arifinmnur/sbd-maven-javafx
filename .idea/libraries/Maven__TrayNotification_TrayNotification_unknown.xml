@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: TrayNotification:TrayNotification:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/TrayNotification/TrayNotification/unknown/TrayNotification-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/TrayNotification/TrayNotification/unknown/TrayNotification-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/TrayNotification/TrayNotification/unknown/TrayNotification-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

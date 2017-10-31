@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:controller="com.sbd12.sewamobil12.controller.PanelController" prefHeight="400.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.6237458193979933" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <HBox layoutX="-1.0" prefHeight="38.0" prefWidth="370.0" style="-fx-background-color: #E3F2FD;" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton buttonType="RAISED">
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox layoutY="340.0" prefHeight="58.0" prefWidth="370.0" style="-fx-background-color: #E3F2FD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <JFXButton style="-fx-background-color: #2196F3;" text="Tambah" />
+                        <JFXButton style="-fx-background-color: #2196F3;" text="Edit" />
+                        <JFXButton style="-fx-background-color: #2196F3;" text="Hapus" />
+                     </children>
+                  </HBox>
+                  <JFXTreeTableView fx:id="treeView" layoutX="-1.0" layoutY="47.0" prefHeight="293.0" prefWidth="370.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="47.0" />
+               </children></AnchorPane>
+          <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="266.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <VBox prefHeight="398.0" prefWidth="266.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox prefHeight="49.0" prefWidth="222.0">
+                           <children>
+                              <Label>
+                                 <HBox.margin>
+                                    <Insets left="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXTextField>
+                                 <HBox.margin>
+                                    <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="49.0" prefWidth="222.0" spacing="24.0">
+                           <children>
+                              <Label text="ID Merk">
+                                 <HBox.margin>
+                                    <Insets left="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="tf_Id_merk" alignment="CENTER_RIGHT">
+                                 <HBox.margin>
+                                    <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="49.0" prefWidth="222.0" spacing="24.0">
+                           <children>
+                              <Label text="Produsen">
+                                 <HBox.margin>
+                                    <Insets left="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="tf_produsen" alignment="CENTER_RIGHT">
+                                 <HBox.margin>
+                                    <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="49.0" prefWidth="222.0" spacing="24.0">
+                           <children>
+                              <Label text="Jenis Mobil">
+                                 <HBox.margin>
+                                    <Insets left="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="tf_jenis_mobil" alignment="CENTER_RIGHT">
+                                 <HBox.margin>
+                                    <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="49.0" prefWidth="222.0" spacing="24.0">
+                           <children>
+                              <Label text="Nama">
+                                 <HBox.margin>
+                                    <Insets left="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="tf_nama" alignment="CENTER_RIGHT">
+                                 <HBox.margin>
+                                    <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
